@@ -9315,6 +9315,21 @@
         "instructionsLink": "http://piececool.com/cpshuoming/IP035.pdf?v=1770027602",
         "360View": "",
         "description": "",
-        "productimage": "http://piececool.com/d/file/IPxilie/2020-07-31/2daabfa1307f846ccc70d8b02ef9f980.jpg"
-    }       
+        "productimage": "https://www.piececool.com/d/file/IPxilie/2020-07-31/2daabfa1307f846ccc70d8b02ef9f980.jpg"
+    },
+    {
+        "number": "IP032-AB",
+        "name": "Imperial Star Destroyer",
+        "difficulty": 5,
+        "sheets": 3,
+        "link": "https://piececool.com/showinfo-54-297-0.html",
+        "checked": false,
+        "type": "Piececool",
+        "status": "",
+        "category": "Star Wars™",
+        "instructionsLink": "https://piececool.com/cpshuoming/IP032.pdf?v=1770131342",
+        "360View": "",
+        "description": "",
+        "productimage": "https://piececool.com/d/file/IPxilie/2020-04-27/041599576a431931e16a5a404ba61661.jpg"
+    }   
 ]
