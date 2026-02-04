@@ -9450,7 +9450,7 @@
         "instructionsLink": "https://piececool.com/cpshuoming/IP011.pdf?v=1770207348",
         "360View": "",
         "description": "",
-        "productimage": "http://piececool.com/d/file/IPxilie/2020-11-03/ad53f60dc3ca6d138adae4f9df905808.jpg"
+        "productimage": "https://piececool.com/d/file/IPxilie/2020-11-03/ad53f60dc3ca6d138adae4f9df905808.jpg"
     },
     {
         "number": "IP012-RK",
@@ -9465,7 +9465,7 @@
         "instructionsLink": "http://piececool.com/cpshuoming/IP012.pdf?v=1770209666",
         "360View": "",
         "description": "",
-        "productimage": "http://piececool.com/d/file/IPxilie/2020-11-03/71d9803f59fa9113c5c2c320de55c06f.jpg"
+        "productimage": "https://piececool.com/d/file/IPxilie/2020-11-03/71d9803f59fa9113c5c2c320de55c06f.jpg"
     },
     {
         "number": "P093-BSK",
@@ -9526,5 +9526,50 @@
         "360View": "",
         "description": "",
         "productimage": "https://www.piececool.com/d/file/Pxilie/2017-06-07/e47e7c6a8749a13f05c9466545bad195.jpg"
+    },
+    {
+        "number": "IP074-BS",
+        "name": "RX-78-2 Gundam™",
+        "difficulty": null,
+        "sheets": 16,
+        "link": "https://piececool.com/showinfo-54-506-0.html",
+        "checked": false,
+        "type": "Piececool",
+        "status": "",
+        "category": "Robots",
+        "instructionsLink": "https://piececool.com/cpshuoming/IP074.pdf?v=1770215959",
+        "360View": "",
+        "description": "",
+        "productimage": "https://piececool.com/d/file/IPxilie/2022-07-01/f7578d3c2ba306cf60b0d7249b605cd5.jpg"
+    },
+    {
+        "number": "IP085-WB",
+        "name": "RX-93ff ν Gundam™",
+        "difficulty": 5,
+        "sheets": 7,
+        "link": "https://piececool.com/showinfo-54-641-0.html",
+        "checked": false,
+        "type": "Piececool",
+        "status": "",
+        "category": "Robots",
+        "instructionsLink": "https://piececool.com/cpshuoming/IP085.pdf?v=1770216110",
+        "360View": "",
+        "description": "",
+        "productimage": "https://piececool.com/d/file/IPxilie/2024-07-08/740d24006ea80e0a91c02db399224555.jpg"
+    },
+    {
+        "number": "P068-R",
+        "name": "Shield Man™",
+        "difficulty": 7,
+        "sheets": 3,
+        "link": "https://www.piececool.com/showinfo-7-96-0.html",
+        "checked": false,
+        "type": "Piececool",
+        "status": "",
+        "category": "Robots",
+        "instructionsLink": "https://www.piececool.com/cpshuoming/P068.pdf?v=1770216263",
+        "360View": "",
+        "description": "",
+        "productimage": "https://www.piececool.com/d/file/Pxilie/2022-01-04/66d6347060bfd07d6d498e95de22661d.jpg"
     }
 ]
