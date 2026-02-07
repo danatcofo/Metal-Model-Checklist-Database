@@ -9274,6 +9274,36 @@
     },
     {
         "checked": false,
+        "name": "Deltoro: Ma Chao",
+        "number": "Q007",
+        "difficulty": 2,
+        "sheets": 3,
+        "link": "http://piececool.com/showinfo-47-231-0.html",
+        "category": "Three Kingdoms",
+        "type": "Piececool",
+        "status": "",
+        "instructionsLink": "http://piececool.com/cpshuoming/Q007.pdf",
+        "360View": "",
+        "description": "Ma Chao, surnamed Meng Qi, is good at shooting with monkey arms, and has the courage of ten thousand husbands, so he is also known as Jinma Chao. He is a hot-blooded hero who follows justice. He is young and promising, with a straight personality. He is a famous founding general of S.",
+        "productimage": "https://piececool.com/d/file/Q/sanguomengjiang/2018-08-01/ce0df2d45e33804426fbdb7cc86a2c9f.png"
+    },
+    {
+        "checked": false,
+        "name": "Banas: Diao Chan",
+        "number": "Q012",
+        "difficulty": 2,
+        "sheets": 3,
+        "link": "http://piececool.com/showinfo-47-236-0.html",
+        "category": "Three Kingdoms",
+        "type": "Piececool",
+        "status": "",
+        "instructionsLink": "http://piececool.com/cpshuoming/Q012.pdf",
+        "360View": "",
+        "description": "Diao Chan, one of the four beauties in ancient China, is famous for her beauty and is known as the closed moon. She is both talented and beautiful. She is good at using beauty tricks, serial tricks, separation tricks, and tenderness is enough to set off the world.",
+        "productimage": "https://piececool.com/d/file/Q/sanguomengjiang/2018-08-01/61aac914ae642d0c6f898aafe98309fd.png"
+    },
+    {
+        "checked": false,
         "name": "Panzer IV",
         "number": "PS2001",
         "difficulty": null,
@@ -9691,5 +9721,20 @@
         "360View": "https://www.metalearth.com/360/PS2028",
         "description": "Concorde SST is the world’s only supersonic transport. It achieved Mach 2 speed (1,354 mph), setting a record during flight from London to New York in just over 3 hours. The Concorde was conceived during a time when the world rose to accept bold challenges such as the pledge “to land a man on the moon and returning him safely to the earth.” Both the Concorde’s maiden flight and the first moon landing occurred in 1969.",
         "productimage": "https://www.metalearth.com/content/images/thumbs/0005784_concorde_570.png"
+    },
+    {
+        "checked": false,
+        "name": "Asteroid Probe Hayabusa",
+        "number": "TMN-012",
+        "difficulty": null,
+        "sheets": 1,
+        "link": "https://tenyo.jp/metanano/science/info/tmn-12.html",
+        "category": "Space Exploration",
+        "type": "Tenyo",
+        "status": "",
+        "instructionsLink": "https://tenyo.jp/assets/metanano/view360/mnp/012/tmn-12.pdf",
+        "360View": "https://tenyo.jp/assets/metanano/view360/mnp/012/",
+        "description": "An asteroid probe launched by the Space Science Research Institute (now the Aerospace Exploration Agency) on May 9, 2003. He conducted many technical tests, such as demonstration tests of ion engines, and reached the asteroid Itokawa in 2005. Observed the surface and successfully collected samples. After that, he overcame many troubles and re-entered the Earth's atmosphere after about seven years of journey on June 13, 2010. The return of the sample by landing on the solid surface of a celestial body outside the Earth's gravitavity sphere is the world's first feat.",
+        "productimage": "https://tenyo.jp/assets/common/img/packages/tmn-12.jpg?20251208"
     }
 ]
