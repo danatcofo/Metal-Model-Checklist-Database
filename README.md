@@ -93,9 +93,22 @@ This checks that Node is available, installs npm dependencies, and installs git 
 - **Lint** validates all `src/**/*.json` files: required fields, allowed `type`/`status` (from `lint-settings.json`), `difficulty` 1–10 or null, `sheets` as a number; folder = type (lowercase, dashes); filename = `{category}-{number}-{name}.json` (lowercase, spaces as dashes).
 - **Build** compiles `src/` into `dist/Model-Database.json`.
 
-### 4. Manual commands
+### 4. Node.js commands
 
-- `npm run lint` — Lint all files under `src/` (path, filename, and content). Fails if any src file has wrong format, folder, or filename. Allowed types/status are configured in **lint-settings.json**.
-- `npm run build` — Compile `src/**/*.json` → `dist/Model-Database.json` (used by pre-commit when relevant paths change).
-- `npm run migrate` — One-time: split root `Model-Database.json` into `src/` (run once when migrating from the single-file layout).
+Run from the repo root with `npm run <script>` (or `node scripts/<script>.js` for scripts that accept extra args).
+
+| Command | What it does |
+|---------|--------------|
+| **`npm run setup`** | Checks Node is available and installs dependencies + git hooks. Use once after clone (or run `npm install`). |
+| **`npm run lint`** | Lint all `src/**/*.json`: required fields, allowed type/status, folder = type slug, filename = `{category}-{number}-{name}.json`. Exits non-zero if any file fails. |
+| **`npm run fix`** | Auto-fix path and schema issues: move/rename files to correct folder and filename, then add missing optional fields and normalize key order. Use `--dry-run` to only list path changes, `--paths-only` or `--schema-only` to fix only one kind. |
+| **`npm run build`** | Compile all `src/**/*.json` into a single **dist/Model-Database.json** (sorted by type, number, name). Runs automatically on commit when src JSON changes. |
+| **`npm run migrate`** | One-time: split a root **Model-Database.json** into individual files under `src/` (for migrating from the old single-file layout). |
+
+**Fix script options** (use `npm run fix -- --dry-run` etc., or run `node scripts/fix-src.js` directly):
+
+- `--dry-run` — Show which files would be moved/renamed; do not change anything.
+- `--paths-only` — Only fix folder and filename; do not add or normalize schema fields.
+- `--schema-only` — Only add missing fields and canonical key order; do not move or rename files.
+- Optional file paths — e.g. `node scripts/fix-src.js src/metal-earth/foo.json` to fix only those files under `src/`.
 

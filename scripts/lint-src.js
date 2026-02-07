@@ -7,61 +7,10 @@
 
 const fs = require('fs');
 const path = require('path');
-
-const ROOT = path.resolve(__dirname, '..');
-const SRC_DIR = path.join(ROOT, 'src');
-
-const FALLBACK_SETTINGS = {
-  allowedTypes: [
-    'Metal Earth', 'ICONX', 'Legends', 'Mega', 'Premium Series', 'MU', 'Piececool'
-  ],
-  allowedStatus: ['', 'Coming Soon', 'Exclusive', 'Retired']
-};
-
-function loadSettings() {
-  const configPath = path.join(ROOT, 'lint-settings.json');
-  try {
-    const raw = fs.readFileSync(configPath, 'utf8');
-    const settings = JSON.parse(raw);
-    return {
-      allowedTypes: Array.isArray(settings.allowedTypes) ? settings.allowedTypes : FALLBACK_SETTINGS.allowedTypes,
-      allowedStatus: Array.isArray(settings.allowedStatus) ? settings.allowedStatus : FALLBACK_SETTINGS.allowedStatus
-    };
-  } catch (e) {
-    return FALLBACK_SETTINGS;
-  }
-}
+const { ROOT, SRC_DIR, slug, typeToFolder, loadSettings, getAllowedFolders, walkDir } = require('./lib/lint-helpers');
 
 const SETTINGS = loadSettings();
-
-/** Type string -> folder name: lowercase, spaces to dashes, strip non-alnum except hyphen. */
-function typeToFolder(type) {
-  return slug(type);
-}
-
-/** Slug: punctuation -> space (removed from filename), lowercase, spaces -> single dash, keep only letters (Unicode), digits, hyphen. */
-function slug(s) {
-  if (s == null || typeof s !== 'string') return '';
-  const noPunct = s.replace(/\p{P}/gu, ' ');
-  const step = noPunct.toLowerCase().trim().replace(/\s+/g, '-');
-  return step.replace(/[^\p{L}\p{N}-]/gu, '').replace(/-+/g, '-').replace(/^-|-$/g, '');
-}
-
-const ALLOWED_FOLDERS = new Set(SETTINGS.allowedTypes.map(typeToFolder));
-
-function walkDir(dir, files = []) {
-  if (!fs.existsSync(dir)) return files;
-  const entries = fs.readdirSync(dir, { withFileTypes: true });
-  for (const e of entries) {
-    const full = path.join(dir, e.name);
-    if (e.isDirectory()) {
-      walkDir(full, files);
-    } else if (e.isFile() && e.name.endsWith('.json')) {
-      files.push(full);
-    }
-  }
-  return files;
-}
+const ALLOWED_FOLDERS = getAllowedFolders(SETTINGS);
 
 function resolveInputPaths(args) {
   const jsonPaths = args.filter(a => typeof a === 'string' && a.endsWith('.json') && !a.startsWith('-'));

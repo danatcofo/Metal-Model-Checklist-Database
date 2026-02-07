@@ -5,6 +5,7 @@
   "description": "Community-driven database for metal models; Node automation for lint and git hooks.",
   "scripts": {
     "lint": "node scripts/lint-src.js",
+    "fix": "node scripts/fix-src.js",
     "build": "node scripts/build.js",
     "migrate": "node scripts/split.js",
     "setup": "node -e \"console.log('Node is available.')\" && npm install",
