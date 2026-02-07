@@ -4,25 +4,19 @@
   "private": true,
   "description": "Community-driven database for metal models; Node automation for lint and git hooks.",
   "scripts": {
-    "lint": "node scripts/lint-model-db.js",
-    "lint:db": "node scripts/lint-model-db.js",
+    "lint": "node scripts/lint-src.js",
     "build": "node scripts/build.js",
     "migrate": "node scripts/split.js",
     "setup": "node -e \"console.log('Node is available.')\" && npm install",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "Model-Database.json": [
-      "node scripts/lint-model-db.js"
-    ],
-    "dist/Model-Database.json": [
-      "node scripts/lint-model-db.js"
-    ],
     "src/**/*.json": [
+      "node scripts/lint-src.js",
       "node scripts/build.js"
     ],
     "scripts/*.js": [
-      "node scripts/lint-model-db.js"
+      "node scripts/lint-src.js"
     ]
   },
   "devDependencies": {

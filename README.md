@@ -1,7 +1,7 @@
 # Metal-Model-Checklist-Database
 A community driven database for metal models from various brands. This checklist is used with the "Metal Earth Checklist" application currently available on IOS.
 
-Currently supported brands: Metal Earth, Piececool, MU
+Currently supported brands: Metal Earth, ICONX, Legends, Mega, Premium Series, MU, Piececool
 
 ## Source layout and build
 
@@ -87,15 +87,15 @@ This checks that Node is available, installs npm dependencies, and installs git 
 
 | When | What runs | If it fails |
 |------|-----------|-------------|
-| **Pre-commit** | Lint/build when `Model-Database.json` or files under `scripts/` are staged | Commit is blocked |
-| **Pre-push** | Full lint of `Model-Database.json` | Push to origin is blocked |
+| **Pre-commit** | **Lint** (then **build**) when `src/**/*.json` are staged; **lint** when `scripts/*.js` are staged | Commit is blocked |
+| **Pre-push** | Full lint of all files under `src/` (path, filename, content) | Push to origin is blocked |
 
-- **Lint** validates the database JSON: required fields, allowed `type`/`status`, `difficulty` 1–10 or null, `sheets` as a number, etc.
+- **Lint** validates all `src/**/*.json` files: required fields, allowed `type`/`status` (from `lint-settings.json`), `difficulty` 1–10 or null, `sheets` as a number; folder = type (lowercase, dashes); filename = `{category}-{number}-{name}.json` (lowercase, spaces as dashes).
 - **Build** compiles `src/` into `dist/Model-Database.json`.
 
 ### 4. Manual commands
 
-- `npm run lint` — Lint the database (e.g. `dist/Model-Database.json` or root `Model-Database.json`).
+- `npm run lint` — Lint all files under `src/` (path, filename, and content). Fails if any src file has wrong format, folder, or filename. Allowed types/status are configured in **lint-settings.json**.
 - `npm run build` — Compile `src/**/*.json` → `dist/Model-Database.json` (used by pre-commit when relevant paths change).
 - `npm run migrate` — One-time: split root `Model-Database.json` into `src/` (run once when migrating from the single-file layout).
 

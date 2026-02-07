@@ -1,0 +1,12 @@
+{
+  "allowedTypes": [
+    "Metal Earth",
+    "ICONX",
+    "Legends",
+    "Mega",
+    "Premium Series",
+    "MU",
+    "Piececool"
+  ],
+  "allowedStatus": ["", "Coming Soon", "Exclusive", "Retired"]
+}
