@@ -3,6 +3,12 @@ A community driven database for metal models from various brands. This checklist
 
 Currently supported brands: Metal Earth, Piececool, MU
 
+## Source layout and build
+
+- **Source of truth:** The `src/` folder. Each model is one JSON file under a type subfolder (e.g. `src/metal-earth/`, `src/iconx/`). File names are `{category}-{number}-{name}.json` (all lowercase, spaces as dashes).
+- **Dist:** Run `npm run build` to compile all `src/**/*.json` into a single **dist/Model-Database.json** (array of all entries, sorted by type, number, name).
+- **Adding a model:** Add a new JSON file in the correct type folder under `src/`, then run `npm run build`. Use the same field format as below.
+
 ## Instructions
 
 New Entries MUST follow this format:
@@ -39,4 +45,57 @@ New Entries MUST follow this format:
 
 Please note that the mode is wrapped in {} as seen above. If the model is not the final model in the list it should have a , following the }.
 
+---
+
+## Development setup (Node automation)
+
+This repo uses **Node.js** for linting and git hooks. You need Node installed before running setup.
+
+### 1. Install Node.js (if not already installed)
+
+- **Windows (winget):** `winget install OpenJS.NodeJS.LTS`
+- **Windows (Chocolatey):** `choco install nodejs-lts`
+- **macOS (Homebrew):** `brew install node`
+- **Linux (nvm):** install [nvm](https://github.com/nvm-sh/nvm), then `nvm install --lts`
+- **Linux (apt):** `sudo apt update && sudo apt install nodejs npm`
+- **Linux (dnf):** `sudo dnf install nodejs npm`
+- **Manual:** [nodejs.org](https://nodejs.org/) — use the LTS version.
+
+Close and reopen your terminal after installing.
+
+### 2. Set up the repo
+
+From the repo root, run the setup script for your OS:
+
+**Windows**
+
+- **Preferred (PowerShell):** `.\scripts\setup.ps1`
+- **If scripts are disabled:** use the CMD script (no execution policy):  
+  `scripts\setup.cmd`  
+  Or run once with bypass:  
+  `powershell -ExecutionPolicy Bypass -File .\scripts\setup.ps1`
+
+**Linux / macOS:**
+```bash
+./scripts/setup.sh
+```
+Or: `sh scripts/setup.sh` (no execute bit needed).
+
+This checks that Node is available, installs npm dependencies, and installs git hooks. Alternatively you can run `npm install` directly (same result once Node is installed).
+
+### 3. What runs automatically
+
+| When | What runs | If it fails |
+|------|-----------|-------------|
+| **Pre-commit** | Lint/build when `Model-Database.json` or files under `scripts/` are staged | Commit is blocked |
+| **Pre-push** | Full lint of `Model-Database.json` | Push to origin is blocked |
+
+- **Lint** validates the database JSON: required fields, allowed `type`/`status`, `difficulty` 1–10 or null, `sheets` as a number, etc.
+- **Build** compiles `src/` into `dist/Model-Database.json`.
+
+### 4. Manual commands
+
+- `npm run lint` — Lint the database (e.g. `dist/Model-Database.json` or root `Model-Database.json`).
+- `npm run build` — Compile `src/**/*.json` → `dist/Model-Database.json` (used by pre-commit when relevant paths change).
+- `npm run migrate` — One-time: split root `Model-Database.json` into `src/` (run once when migrating from the single-file layout).
 
