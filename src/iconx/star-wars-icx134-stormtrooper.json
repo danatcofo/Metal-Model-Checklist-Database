@@ -1,17 +1,17 @@
 {
-    "action": "update",
-    "number": "ICX134",
+    "checked": false,
     "name": "Stormtrooper™",
-    "category": "Star Wars™",
+    "number": "ICX134",
     "difficulty": 8,
     "sheets": 2.5,
-    "checked": false,
-    "originalNumber": "ICX134",
     "link": "https://www.metalearth.com/starwars/stormtrooper",
+    "category": "Star Wars™",
     "type": "ICONX",
     "status": "",
     "instructionsLink": "https://www.metalearth.com/download/sample/425",
     "360View": "https://www.metalearth.com/360/ICX134",
     "description": "",
-    "productimage": "https://www.metalearth.com/content/images/thumbs/0005029_stormtroopertrade_570.png"
+    "productimage": "https://www.metalearth.com/content/images/thumbs/0005029_stormtroopertrade_570.png",
+    "action": "update",
+    "originalNumber": "ICX134"
 }

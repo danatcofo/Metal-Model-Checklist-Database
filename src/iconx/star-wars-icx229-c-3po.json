@@ -2,16 +2,16 @@
     "checked": false,
     "name": "C-3PO™",
     "number": "ICX229",
-    "action": "update",
-    "category": "Star Wars™",
     "difficulty": 6,
     "sheets": 3,
-    "originalNumber": "ICX229",
     "link": "https://www.metalearth.com/premium/premium-c-3po",
-    "instructionsLink": "https://www.metalearth.com/download/sample/443",
+    "category": "Star Wars™",
     "type": "ICONX",
     "status": "Retired",
+    "instructionsLink": "https://www.metalearth.com/download/sample/443",
     "360View": "https://www.metalearth.com/360/ICX229",
     "description": "C-3PO™ is a protocol droid fluent in over six million forms of communication, primarily serving as a translator and diplomatic interface. Its gold-plated exterior and precise, if overly anxious, demeanor make it an unlikely but persistent companion in high-stakes operations.",
-    "productimage": "https://www.metalearth.com/content/images/thumbs/0004098_c-3po-trade_570.png"
+    "productimage": "https://www.metalearth.com/content/images/thumbs/0004098_c-3po-trade_570.png",
+    "action": "update",
+    "originalNumber": "ICX229"
 }

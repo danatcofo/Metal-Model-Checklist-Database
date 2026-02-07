@@ -2,16 +2,16 @@
     "checked": false,
     "name": "Darth Vader's TIE Advanced X1™",
     "number": "MMS253",
-    "action": "update",
-    "category": "Star Wars™",
     "difficulty": null,
     "sheets": 2,
-    "originalNumber": "MMS253",
     "link": "https://www.metalearth.com/starwars/dv-tie-fighter",
-    "instructionsLink": "https://www.metalearth.com/download/sample/83",
+    "category": "Star Wars™",
     "type": "Metal Earth",
     "status": "",
+    "instructionsLink": "https://www.metalearth.com/download/sample/83",
     "360View": "https://www.metalearth.com/360/MMS253",
     "description": "Darth Vader's TIE Fighter™ is the prototype that was used as the basis for all the terrifyingly effective TIE Fighters and Interceptors that would be developed for future battles. The TIE Fighter™ has proved itself in battle, as it is capable of withstanding many direct hits. In addition the pilots' chances of survival were considerably enhanced by the incorporation of a hyper drive system, which enables the ship to escape from hopeless battle situations.",
-    "productimage": "https://www.metalearth.com/content/images/thumbs/0003952_darth-vaders-tie-advanced-x1trade_570.png"
+    "productimage": "https://www.metalearth.com/content/images/thumbs/0003952_darth-vaders-tie-advanced-x1trade_570.png",
+    "action": "update",
+    "originalNumber": "MMS253"
 }

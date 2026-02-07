@@ -1,17 +1,17 @@
 {
-    "action": "update",
-    "number": "MMS314",
+    "checked": false,
     "name": "Darth Vader Helmet™",
-    "category": "Star Wars™",
+    "number": "MMS314",
     "difficulty": null,
     "sheets": 2,
-    "checked": false,
-    "originalNumber": "MMS314",
     "link": "https://www.metalearth.com/starwars/darth-vader-helmet",
+    "category": "Star Wars™",
     "type": "Metal Earth",
     "status": "",
     "instructionsLink": "https://www.metalearth.com/download/sample/327",
     "360View": "https://www.metalearth.com/360/MMS314",
     "description": "",
-    "productimage": "https://www.metalearth.com/content/images/thumbs/0002485_darth-vadertrade-helmet_570.png"
+    "productimage": "https://www.metalearth.com/content/images/thumbs/0002485_darth-vadertrade-helmet_570.png",
+    "action": "update",
+    "originalNumber": "MMS314"
 }

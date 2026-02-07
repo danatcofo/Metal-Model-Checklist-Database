@@ -2,16 +2,16 @@
     "checked": false,
     "name": "TIE Fighter™",
     "number": "ICX220",
-    "action": "update",
-    "category": "Star Wars™",
     "difficulty": null,
     "sheets": 2.5,
-    "originalNumber": "ICX220",
     "link": "https://www.metalearth.com/coming-soon/premium-tie-fighter",
-    "instructionsLink": "https://www.metalearth.com/download/sample/511",
+    "category": "Star Wars™",
     "type": "ICONX",
     "status": "",
+    "instructionsLink": "https://www.metalearth.com/download/sample/511",
     "360View": "https://www.metalearth.com/360/ICX220",
     "description": "TIE Fighters are one-man starfighters with a spherical cockpit, hexagonal wings and two chin-mounted laser canons. The basic TIE fighter™ first appeared in A New Hope™ and is the primary Imperial fighter seen in the Original Trilogy.",
-    "productimage": "https://www.metalearth.com/content/images/thumbs/0005572_imperial-tie-fightertrade_570.png"
+    "productimage": "https://www.metalearth.com/content/images/thumbs/0005572_imperial-tie-fightertrade_570.png",
+    "action": "update",
+    "originalNumber": "ICX220"
 }

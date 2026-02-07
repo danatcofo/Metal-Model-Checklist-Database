@@ -1,17 +1,17 @@
 {
-    "action": "update",
-    "number": "MMS457",
+    "checked": false,
     "name": "Bowser's Castle™",
-    "category": "Universal Studios™",
+    "number": "MMS457",
     "difficulty": null,
     "sheets": 3,
-    "checked": false,
-    "originalNumber": "MMS457",
-    "link": "",
+    "link": "https://www.metalearth.com",
+    "category": "Universal Studios™",
     "type": "Metal Earth",
     "status": "Exclusive",
     "instructionsLink": "",
     "360View": "",
     "description": "",
-    "productimage": ""
+    "productimage": "",
+    "action": "update",
+    "originalNumber": "MMS457"
 }
