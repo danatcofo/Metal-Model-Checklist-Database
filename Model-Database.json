@@ -9712,7 +9712,7 @@
         "name": "Banas: Diao Chan",
         "difficulty": 2,
         "sheets": 3,
-        "link": "http://piececool.com/showinfo-47-236-0.html",
+        "link": "https://piececool.com/showinfo-47-236-0.html",
         "checked": false,
         "type": "Piececool",
         "status": "",
@@ -9727,7 +9727,7 @@
         "name": "Deltoro: Ma Chao",
         "difficulty": 2,
         "sheets": 3,
-        "link": "http://piececool.com/showinfo-47-231-0.html",
+        "link": "https://piececool.com/showinfo-47-231-0.html",
         "checked": false,
         "type": "Piececool",
         "status": "",
@@ -9736,5 +9736,20 @@
         "360View": "",
         "description": "Ma Chao, surnamed Meng Qi, is good at shooting with monkey arms, and has the courage of ten thousand husbands, so he is also known as Jinma Chao. He is a hot-blooded hero who follows justice. He is young and promising, with a straight personality. He is a famous founding general of S.",
         "productimage": "https://piececool.com/d/file/Q/sanguomengjiang/2018-08-01/ce0df2d45e33804426fbdb7cc86a2c9f.png"
+    },
+    {
+        "number": "Q002",
+        "name": "Dorado: Liu Bei",
+        "difficulty": 2,
+        "sheets": 3,
+        "link": "https://piececool.com/showinfo-47-226-0.html",
+        "checked": false,
+        "type": "Piececool",
+        "status": "",
+        "category": "Three Kingdoms",
+        "instructionsLink": "http://piececool.com/cpshuoming/Q002.pdf",
+        "360View": "",
+        "description": "Liu Bei, surnamed Xuande, was the kinging emperor of Shu and Han during the Three Kingdoms period. He was resolute and generous, talented and virtuous, and was followed by many heroes. In troubled times, he divided the world with Cao Cao and Sun Quan; and through indomitable efforts, he finally became an emperor.",
+        "productimage": "https://piececool.com/d/file/Q/sanguomengjiang/2018-08-01/d84f6f3644b214f81b9a3678cf64bb0f.png"
     }
 ]
