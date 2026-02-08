@@ -16,7 +16,8 @@ const DEFAULT_LINKS = {
   'Mega': 'https://www.metalearth.com',
   'Premium Series': 'https://www.metalearth.com',
   'MU': 'https://www.mu-store.com',
-  'Piececool': 'https://piececool.com'
+  'Piececool': 'https://piececool.com',
+  'Tenyo': 'https://tenyo.jp'
 };
 
 const FALLBACK_DEFAULTS = {
@@ -32,7 +33,7 @@ const FALLBACK_DEFAULTS = {
 
 const FALLBACK_SETTINGS = {
   allowedTypes: [
-    'Metal Earth', 'ICONX', 'Legends', 'Mega', 'Premium Series', 'MU', 'Piececool'
+    'Metal Earth', 'ICONX', 'Legends', 'Mega', 'Premium Series', 'MU', 'Piececool', 'Tenyo'
   ],
   allowedStatus: ['', 'Coming Soon', 'Exclusive', 'Retired']
 };
