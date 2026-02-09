@@ -1,0 +1,15 @@
+{
+    "checked": false,
+    "name": "Asteroid Probe Hayabusa",
+    "number": "TMN-012",
+    "difficulty": null,
+    "sheets": 1,
+    "link": "https://tenyo.jp/metanano/science/info/tmn-12.html",
+    "category": "Space Exploration",
+    "type": "Tenyo",
+    "status": "",
+    "instructionsLink": "https://tenyo.jp/assets/metanano/view360/mnp/012/tmn-12.pdf",
+    "360View": "https://tenyo.jp/assets/metanano/view360/mnp/012/",
+    "description": "An asteroid probe launched by the Space Science Research Institute (now the Aerospace Exploration Agency) on May 9, 2003. He conducted many technical tests, such as demonstration tests of ion engines, and reached the asteroid Itokawa in 2005. Observed the surface and successfully collected samples. After that, he overcame many troubles and re-entered the Earth's atmosphere after about seven years of journey on June 13, 2010. The return of the sample by landing on the solid surface of a celestial body outside the Earth's gravitavity sphere is the world's first feat.",
+    "productimage": "https://tenyo.jp/assets/common/img/packages/tmn-12.jpg?20251208"
+}

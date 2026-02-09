@@ -1,0 +1,30 @@
+{
+  "name": "metal-model-checklist-database",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Community-driven database for metal models; Node automation for lint and git hooks.",
+  "scripts": {
+    "lint": "node scripts/lint-src.js",
+    "fix": "node scripts/fix-src.js",
+    "build": "node scripts/build.js",
+    "migrate": "node scripts/split.js",
+    "setup": "node -e \"console.log('Node is available.')\" && npm install",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.json": [
+      "node scripts/lint-src.js",
+      "node scripts/build.js"
+    ],
+    "scripts/*.js": [
+      "node scripts/lint-src.js"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
