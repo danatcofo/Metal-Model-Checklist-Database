@@ -17,7 +17,7 @@ const DEFAULT_LINKS = {
   'Premium Series': 'https://www.metalearth.com',
   'MU': 'https://www.mu-store.com',
   'Piececool': 'https://piececool.com',
-  'Tenyo': 'https://tenyo.jp'
+  'Tenyo': 'https://tenyo.jp',
 };
 
 const FALLBACK_DEFAULTS = {
@@ -33,7 +33,7 @@ const FALLBACK_DEFAULTS = {
 
 const FALLBACK_SETTINGS = {
   allowedTypes: [
-    'Metal Earth', 'ICONX', 'Legends', 'Mega', 'Premium Series', 'MU', 'Piececool', 'Tenyo'
+    'Metal Earth', 'ICONX', 'Legends', 'Mega', 'Premium Series', 'MU', 'Piececool', 'Tenyo', 'Microworld', 'Ironstar', 'Picture Kingdom', 'HK Nanyuan', 'Metal Tour', 'DaTang', 'Strato Studio'
   ],
   allowedStatus: ['', 'Coming Soon', 'Exclusive', 'Retired']
 };
