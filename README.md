@@ -1,7 +1,18 @@
 # Metal-Model-Checklist-Database
 A community driven database for metal models from various brands. This checklist is used with the "Metal Earth Checklist" application currently available on IOS.
 
-Currently supported brands: Metal Earth, ICONX, Legends, Mega, Premium Series, MU, Piececool
+Currently supported brands: 
+Metal Earth (ICONX, Legends, Mega, Premium Series)
+MU
+Piececool
+Tenyo
+Microworld
+Ironstar
+Picture Kingdom
+HK Nanyuan
+Metal Tour
+DaTang
+Strato Studio
 
 ## Source layout and build
 
