@@ -18,6 +18,13 @@ const DEFAULT_LINKS = {
   'MU': 'https://www.mu-store.com',
   'Piececool': 'https://piececool.com',
   'Tenyo': 'https://tenyo.jp',
+  'Microworld': '',
+  'Ironstar': '',
+  'Picture Kingdom': '', 
+  'HK Nanyuan': '',
+  'Metal Tour': '',
+  'DaTang': '',
+  'Strato Studio': ''
 };
 
 const FALLBACK_DEFAULTS = {
